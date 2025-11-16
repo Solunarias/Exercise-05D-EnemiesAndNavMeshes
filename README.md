@@ -1,7 +1,10 @@
-# Exercise-05d-EnemiesAndNavMeshes
-
-
-## Implementation
+# Project 5
+## Implementation / Features you added
++1 stun gun
++1 flashlight
++1 win and lose menus
++1 lighting from players/enemies
++1 Large level
 
 ## References
 

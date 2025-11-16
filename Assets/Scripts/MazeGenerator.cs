@@ -14,6 +14,10 @@ public class MazeGenerator : MonoBehaviour
 
     public GameObject player;
 
+    public GameObject enemy;
+
+    public GameObject cheese;
+
     const int N = 1;
     const int E = 2;
     const int S = 4;
@@ -38,6 +42,31 @@ public class MazeGenerator : MonoBehaviour
         cell_walls[new Vector2(1, 0)] = E;
         cell_walls[new Vector2(0, 1)] = S;
         cell_walls[new Vector2(-1, 0)] = W;
+
+        GameObject e1 = GameObject.Instantiate(enemy);
+        e1.transform.position = new Vector3(45f, 1f, 5f);
+        GameObject e2 = GameObject.Instantiate(enemy);
+        e2.transform.position = new Vector3(95f, 1f, 5f);
+        GameObject e3 = GameObject.Instantiate(enemy);
+        e3.transform.position = new Vector3(5f, 1f, 45f);
+        GameObject e4 = GameObject.Instantiate(enemy);
+        e4.transform.position = new Vector3(45f, 1f, 45f);
+        GameObject e5 = GameObject.Instantiate(enemy);
+        e5.transform.position = new Vector3(95f, 1f, 45f);
+        GameObject e6 = GameObject.Instantiate(enemy);
+        e6.transform.position = new Vector3(5f, 1f, 95f);
+        GameObject e7 = GameObject.Instantiate(enemy);
+        e7.transform.position = new Vector3(45f, 1f, 95f);
+        GameObject e8 = GameObject.Instantiate(enemy);
+        e8.transform.position = new Vector3(25f, 1f, 25f);
+        GameObject e9 = GameObject.Instantiate(enemy);
+        e9.transform.position = new Vector3(25f, 1f, 65f);
+        GameObject e10 = GameObject.Instantiate(enemy);
+        e10.transform.position = new Vector3(65f, 1f, 25f);
+        GameObject e11 = GameObject.Instantiate(enemy);
+        e11.transform.position = new Vector3(65f, 1f, 65f);
+        GameObject c = GameObject.Instantiate(cheese);
+        c.transform.position = new Vector3(95f, 1f, 95f);
 
         MakeMaze();
 
